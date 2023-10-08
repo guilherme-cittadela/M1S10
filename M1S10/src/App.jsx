@@ -1,12 +1,17 @@
 import { Header } from "./assets/components/header/Header"
-import FormularioNovoMedicamento from "./assets/components/novoMedicamento/FormularioNovoMedicamento"
+import { ListaMedicamentos } from "./assets/components/listaMedicamentos/ListaMedicamentos"
+import NovoMedicamento from "./assets/components/novoMedicamento/NovoMedicamento"
+import { MedicamentosProvider } from './assets/context/Context.jsx'
 
 function App() {
 
   return (
     <>
-        
-        <FormularioNovoMedicamento/>
+        <MedicamentosProvider>
+          <Header/>
+          <NovoMedicamento/>
+          <ListaMedicamentos/>
+        </MedicamentosProvider>
     </>
   )
 }

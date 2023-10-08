@@ -10,6 +10,13 @@ export const MedicamentosProvider = ({ children }) => {
   };
 
   const favoritarMedicamento = (medicamentoId) => {
+    setMedicamentos((medicamentos) =>
+      medicamentos.map((medicamento) =>
+        medicamento.id === medicamentoId
+          ? { ...medicamento, favorito: !medicamento.favorito }
+          : medicamento
+      )
+    );
   };
 
   return (

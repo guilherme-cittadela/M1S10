@@ -1,0 +1,14 @@
+
+/* lista-medicamentos.css (ou qualquer nome que preferir) */
+
+.lista-medicamentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px); /* Cria uma grade automática com colunas de 300px de largura */
+    gap: 20px; /* Espaçamento entre os cards */
+  }
+  
+  
+  .lista-medicamentos-centered {
+    justify-content: center;
+  }
+  

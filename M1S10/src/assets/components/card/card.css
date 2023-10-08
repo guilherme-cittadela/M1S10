@@ -1,0 +1,41 @@
+
+.card-medicamento {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 250px;
+  }
+  
+  .card-medicamento-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-medicamento-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .card-medicamento-text {
+    flex: 1;
+  }
+  
+  .favoritar-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: gray;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .favoritar-button.favorito {
+    color: red;
+  }
+  

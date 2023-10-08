@@ -1,8 +1,9 @@
 import React from 'react';
+import './header.css'
 
 function Header() {
   return (
-    <header style={headerStyle}>
+    <header>
       <img
         src="caminho-para-sua-logo.png"
         alt="Logo da Empresa"
